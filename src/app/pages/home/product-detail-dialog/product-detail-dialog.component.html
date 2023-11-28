@@ -1,0 +1,16 @@
+<div style="display: flex; justify-content: space-between; align-items: flex-start;">
+    <span style="flex: 0 0 40%; max-width: 500px;">
+        <img [src]="data.product.image" alt="{{ data.product.name }}" style="max-width: 100%; height: auto;" />
+    </span>
+
+    <span id="txt" style="flex: 1; text-align: left; margin-left: 20px; max-width: 400px;">
+        <h1>{{ data.product.name }}</h1>
+        <p id="p1">{{ data.product.category}}</p>
+        <p id="p2">{{ data.product.description }}</p>
+        <p id="p3">Available Sizes</p>
+        <p id="p4">{{ data.product.price | currency: 'LKR.' }}</p>
+    </span>
+
+    <button mat-button [mat-dialog-close]="'close'" style="align-self: flex-start;">Close</button>
+</div>
+

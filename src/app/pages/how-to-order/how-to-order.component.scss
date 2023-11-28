@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
+@media only screen and (max-width:3000px) {
+  div{
+    background-color: rgb(221, 214, 214);
+    padding: 5px;
+  }
+}
+
+#hto{
+  padding-top: 25px;
+}
+
+#bg{
+  background-color: white;
+}
+
+h2{
+  font: normal 25px 'Playfair Display SC', serif;
+  text-align: center;
+  color: #181717;
+}
+
+p{
+  padding:0.3%;
+  margin-left: 1%;
+}
+
+h4{
+    font-size: 15px;
+    font-family:Georgia, serif;;
+}
+
+li{
+  margin-left: 1%;
+}

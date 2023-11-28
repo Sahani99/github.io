@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
+@media only screen and (max-width:3000px) {
+    div{
+      background-color: rgb(221, 214, 214);
+      padding: 10px;
+    }
+  }
+  
+#about{
+  padding-top: 25px;
+}
+
+h2{
+    font: normal 25px 'Playfair Display SC', serif;
+    text-align: center;
+    color: #181717;
+  }
+
+  P{
+    padding: 1%;
+  }
+
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #div-row {
+    .column {
+      .button-link {
+        display: inline-block;
+        
+        img {
+          display: block;
+        }
+      }
+    }
+  }
+  

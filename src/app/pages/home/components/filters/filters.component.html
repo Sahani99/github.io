@@ -1,0 +1,9 @@
+<button mat-button [matMenuTriggerFor]="mymenu">
+  <button mat-icon-button> <mat-icon>menu</mat-icon> </button>
+</button>
+<mat-menu #mymenu="matMenu">
+  <button mat-menu-item (click)="onShowCategory('All Products')">All Products</button>
+  <button mat-menu-item (click)="onShowCategory('Lady\'s Wear')">Lady's Wear</button>
+  <button mat-menu-item (click)="onShowCategory('Baby\'s Wear')">Baby's Wear</button> 
+  <button mat-menu-item (click)="onShowCategory('Accessories')">Accessories</button> 
+</mat-menu>

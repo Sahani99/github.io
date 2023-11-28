@@ -1,0 +1,35 @@
+  <div class="contain" >
+        <mat-grid-list gutterSize="25" [cols]="cols" [rowHeight]="rowHeight">
+                 <ng-container *ngFor="let product of products">
+                   <mat-grid-tile *ngIf="!category || product.category === category">
+                     <mat-card [ngClass]="{ 'text-center': !fullWidthMode, 'full-width': fullWidthMode }">
+                      <mat-card-content (click)="openProductDetailDialog(product)">     
+             <div class="flex" [ngClass]="{ 'flex': fullWidthMode }">
+               <img
+                 class="mb-1 mx-auto"
+                 [ngClass]="{ 'h-[270px]': !fullWidthMode, 'h-[360px]': fullWidthMode, 'fixed-width-img': true }"
+                 [src]="product.image"
+               />
+             
+               <div class="w-full" [ngClass]="{ 'px-8 flex flex-col justify-between': fullWidthMode }">
+                 <div>
+                   <mat-card-title>{{ product.name }}</mat-card-title>
+                   <mat-card-subtitle class="truncate hover:whitespace-normal">{{ product.category }}</mat-card-subtitle>
+                   <p *ngIf="fullWidthMode">{{ product.description }}</p>
+                 </div>
+                 <div class="flex justify-between">
+                   <span class="text-red-400">{{ product.price | currency: 'LKR.' }}</span>
+                   <button >
+                     <a href=# class="button-link">
+                       <img id="buy" src="../../../assets/img/buy.png" alt="Buy Now">
+                   </a>
+                   </button>
+                 </div>
+               </div>
+             </div>
+            </mat-card-content>
+           </mat-card>
+         </mat-grid-tile>
+       </ng-container>
+     </mat-grid-list> 
+  </div> 

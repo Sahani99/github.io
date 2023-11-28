@@ -1,0 +1,35 @@
+$headerColor: #00746c;
+$border-bottom-color: rgba(0, 0, 0, 0.12);
+$alternateColor: rgba(14, 165, 155, 0.04);
+
+#size{
+  padding-top: 25px;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+
+tr.mat-header-row {
+    height: 50px;
+    background-color: rgb(221, 214, 214);
+}
+
+tr.mat-header-row th {
+  font-size: 20px;
+  font-family:Georgia, serif;;
+  font-style:oblique; 
+  color: #181717;    text-align: center;
+
+}
+
+tr.mat-row:nth-child(even) {
+    background-color: $alternateColor;
+}
+
+h2{
+  font: normal 25px 'Playfair Display SC', serif;
+  text-align: center;
+  color: #181717;
+}

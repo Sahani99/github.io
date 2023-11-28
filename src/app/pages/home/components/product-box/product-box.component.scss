@@ -1,0 +1,23 @@
+.full-width {
+  width: 100%;
+}
+
+.fixed-width-img {
+  width: 250px;
+  object-fit: cover; 
+}
+
+#buy{
+  // max-width: 70px;
+  width: auto;
+  text-align: end;
+}
+
+#div1{
+  border-right: 10px;
+}
+
+#img1 {
+  max-height:250px;
+  display:inline-block;
+  }
